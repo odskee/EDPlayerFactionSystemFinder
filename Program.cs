@@ -59,7 +59,7 @@ namespace PlayerFactionSystemFinder
                 response.EnsureSuccessStatusCode();
                 ParentSystem = JsonConvert.DeserializeObject<Welcome>(response.Content.ReadAsStringAsync().Result);
 
-                Console.WriteLine("Done.. Ready to perform search, this will take some time depending on the size of the target faction.  This is to prevent abuse of the EliteBGS API which this makes use of.  Press any key when you're ready to continue...");
+                Console.WriteLine("Done.. Ready to perform search, this will take some time depending on the size of the target faction.  Press any key when you're ready to continue...");
                 Console.ReadKey();
                 foreach (FactionPresence searchSystem in ParentSystem.Docs[0].FactionPresence)
                 {
@@ -100,7 +100,7 @@ namespace PlayerFactionSystemFinder
                             }
                         }
 
-                        await Task.Delay(2000);
+                        await Task.Delay(1000);
                     }
                 }
             }
