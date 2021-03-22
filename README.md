@@ -1,0 +1,1 @@
+﻿Finds systems without player factions centered around each system a particualr faction is present in.
